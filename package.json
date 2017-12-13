@@ -1,0 +1,15 @@
+{
+  "name": "serve-data-drill-1",
+  "version": "1.0.0",
+  "description": "Serve Data to Clients Drill 1",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Michael Schreier",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.4",
+    "express": "^4.16.2"
+  }
+}
