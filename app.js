@@ -1,6 +1,7 @@
 const express = require("express");
 const app = express();
 const cors = require("cors");
+const port = process.env.PORT || 8080;
 app.use(cors());
 
 var cohorts = [{
@@ -51,4 +52,4 @@ app.get("/:id", function(request, response) {
   response.json({data: record});
 })
 
-// app.listen();
+app.listen(port);
