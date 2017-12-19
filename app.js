@@ -37,8 +37,8 @@ function findById(data, id) {
 }
 
 app.get("/", function(request, response) {
-  response.json({data: cohorts});
   response.status(200);
+  response.json({data: cohorts});
 })
 
 app.get("/:id", function(request, response) {
@@ -50,8 +50,8 @@ app.get("/:id", function(request, response) {
         message: "No record found",
     }})
   }
-  response.json({data: record});
   response.status(200);
+  response.json({data: record});
 })
 
 app.listen(port);
